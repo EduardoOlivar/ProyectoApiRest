@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "nombre":"Jose Eduardo",
+        "apellidos":"Olivar Aros"
+    },
+    {
+        "id": "2",
+        "nombre":"Juan Pablo",
+        "apellidos":"Lagos Secos"
+    },
+    {
+        "id": "3",
+        "nombre":"Irene Del Pilar",
+        "apellidos":"Valencia Luna"
+    }
+]
