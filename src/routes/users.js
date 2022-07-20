@@ -40,14 +40,19 @@ router.post('/',(req,res)=>{
 //borra usuarios a partir de su id 
 router.delete('/:id', (req,res) => {
     const {id}  = req.params;
+    let estaId = false;
     for(let i =0; i < usuarios.length; i++){
         if(usuarios[i].id == id){
+        estaId = true;
         usuarios.splice(i,1);
-        res.send(usuarios);
         }
     }
 
-    // res.status(400).json({error:'No se encontro el id'});
+    if(estaId){
+        res.send(usuarios);
+    }else{
+        res.status(400).json({error:'No se encontro el id'}); 
+    }
 });
 
 
